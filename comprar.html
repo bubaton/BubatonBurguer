@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUBATON BURGUER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="menu container">
+            <img class="logo-1" src="images/logo.svg" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="index.html" class="btn">Inicio</a></li>
+                        <li><a href="#products" class="btn">Menu</a></li>
+                        <li><a href="#sobre" class="btn">Nosotros</a></li>
+
+                </div>
+                <img class="logo-2" src="images/logo.svg" alt="">
+                <div class="menu-2">
+                    <ul>
+                        <li><a href="#horario" class="btn">Horario</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/bubatonburger/?locale=es_LA">
+                            <div class="social">
+                                <img src="images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="https://x.com/burgercitiesbar?lang=es&mx=2">
+                            <div class="social">
+                                <img src="images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/bubatonburger/?hl=es">
+                            <div class="social">
+                                <img src="images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <ul>
+                        <li class="submenu">
+                            <img src="images/car.svg" id="img-carrito" alt="">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                     <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                     </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn-4">Vaciar Carrito</a>
+                                <button id="enviar-pedido" type="button" class="btn-enviar">Enviar Pedido</button>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+        <!--
+        <div class="header-content container">
+
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Especialidad</h1>
+                                <p>
+                                    Disfruta de la especialidad de la casa, nuestras jugosas y deliciosas hamburguesas,
+                                    contamos con diferentes tipos como carne, pollo, hot dog, chorizo, entre otros.
+                                    Además le puedes agregar diferentes acompañamientos como tocino, huevo, piña, queso  
+                                    cheddar o americano y más por tan solo un sol extra por cada acompañante.
+                                    No te pierdas de estas delicias!
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Explorar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/slider1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Mas Pedido</h1>
+                                <p>
+                                    Esta delicia combina carne
+                                    a la parrilla, tierno asado, pavo jugoso y un toque dulce de plátano, creando una
+                                    mezcla sorprendente de sabores. Perfecta para quienes buscan algo diferente, "La
+                                    Sana" es una experiencia culinaria que desafía las expectativas y satisface todos
+                                    los antojos.
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Explorar</a>
+                                    <a href="#products" class="btn-1">Menu</a>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/slider2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider">
+                            <div class="slider-txt">
+                                <h1>Ofertas</h1>
+                                <p>
+                                    ¡La reina de la fiesta en cada bocado! Esta hamburguesa es pura celebración, con
+                                    ingredientes que se combinan para ofrecerte una explosión de sabores irresistibles.
+                                    Perfecta para quienes disfrutan de una buena fiesta en su plato.
+
+
+                                </p>
+                                <div class="botones">
+                                    <a href="#" class="btn-1">Explorar</a>
+                                    <a href="#" class="btn-1">Menu</a>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="images/slider3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        -->
+    </header>
+    
+    <hr>
+    
+    <section class="promos container" id="lista-1">
+        <h2>Promociones</h2>
+        <div class="categories">
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Promo 1</h3>
+                    <div class="prices">
+                        <p class="price-1">S/. 17</p>
+                        <p class="precio">S/. 15</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/food1.png" title="Disfruta de lo mejor de nuestra cocina con el Combo Clásico. Incluye una hamburguesa con carne jugosa a la parrilla, papas fritas crujientes y una bebida refrescante. ¡Perfecto para una comida rápida y deliciosa!" alt="">
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Promo 2</h3>
+                    <div class="prices">
+                        <p class="price-1">S/. 17</p>
+                        <p class="precio">S/. 15</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al Carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/food2.png" title="Ideal para compartir en familia. Este combo trae cuatro hamburguesas a tu elección, dos porciones grandes de papas fritas y una bebida de 1.5L. ¡Toda la familia disfrutará de una comida completa y sabrosa!" alt="">
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Promo 3</h3>
+                    <div class="prices">
+                        <p class="price-1">S/. 17</p>
+                        <p class="precio">S/. 15</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al Carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/food3.png" title="¿Vienes con un amigo? El Dúo Crocante es la opción perfecta. Dos hamburguesas de pollo frito empanizado, acompañadas de papas fritas y bebidas pequeñas. ¡Una oferta irresistible para dos!" alt="">
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Promo 4</h3>
+                    <div class="prices">
+                        <p class="price-1">S/. 17</p>
+                        <p class="precio">S/. 15</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al Carrito</a>
+                </div>
+                <div class="categorie-img">
+                    <img src="images/food4.png" title="¡Atrévete a probar algo nuevo! Cada semana, sorprendemos con una combinación especial con papas y bebida. No te pierdas la oportunidad de descubrir sabores únicos a un precio increíble." alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="productsn container" id="lista-2">
+        <h2>Nuestros Productos</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food1.png" title="Deliciosa hamburguesa con carne a la parrilla, acompañada de nuestros ingredientes frescos y salsas especiales. ¡Una clásica que siempre satisface!" alt="">
+                        <div class="productn-txt">
+                            <h3>Hamburguesa doble carne</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="5" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food2.png" title="Combina lo mejor de dos mundos: carne jugosa y jamón ahumado, servidos en un pan largo y suave. ¡Perfecta para los amantes del sabor extra!" alt="">
+                        <div class="productn-txt">
+                            <h3>Perrito caliente</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="6" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food3.png" title="Pechuga de pollo empanizada y dorada, acompañada de vegetales frescos y nuestra salsa secreta. ¡Sabor crocante y delicioso en cada bocado!" alt="">
+                        <div class="productn-txt">
+                            <h3>Pan de pollo</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="7" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food4.png" title="Finas tiras de carne marinada con nuestras especias exclusivas, envueltas en pan suave y acompañado de salsas frescas. ¡Una explosión de sabores mediterráneos!" alt="">
+                        <div class="productn-txt">
+                            <h3>Burrito</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="productsn container" id="lista-3">
+        <h2>Variedades</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food5.png" title="Disfruta de una opción saludable y deliciosa con nuestro shawarma vegetariano, repleto de vegetales frescos y salsas especiales. ¡Ligero, pero lleno de sabor!" alt="">
+                        <div class="productn-txt">
+                            <h3>Shawarma Vegetariano</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food6.png" title="Una combinación única de mariscos frescos y especias, envueltos en un pan suave y acompañado de salsas mediterráneas. ¡Una delicia para los amantes del mar!" alt="">
+                        <div class="productn-txt">
+                            <h3>Enrollado de Tortilla</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food7.png" title="Un plato completo y lleno de sabor, preparado con ingredientes frescos y una presentación que te encantará. ¡Perfecto para cuando buscas algo más contundente!" alt="">
+                        <div class="productn-txt">
+                            <h3>Ensalada de verduras</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="11" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/food8.png" title="Sabrosas brochetas de anticuchos, marinadas con nuestras especias tradicionales y asadas a la perfección. ¡Un clásico de la parrilla que no te puedes perder!" alt="">
+                        <div class="productn-txt">
+                            <h3>Anticuchos</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 10</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="12" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="productsn container" id="lista-4">
+        <h2>Bebidas</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/trago1.png" title="Una explosión de frescura y sabor con nuestra limonada frozen de frutos rojos. ¡Refrescante y perfecta para cualquier momento!" alt="">
+                        <div class="productn-txt">
+                            <h3>Jugo de Arandano</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 7</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/trago2.png" title="Siente la frescura de nuestra limonada frozen azul, con un toque cítrico que te llenará de energía. ¡Tan refrescante como deliciosa!" alt="">
+                        <div class="productn-txt">
+                            <h3>Jugo Afrodisiaco</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 7</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/trago3.png" title="Disfruta del equilibrio perfecto entre dulzura y acidez con nuestra limonada frozen amarilla, hecha con los mejores cítricos." alt="">
+                        <div class="productn-txt">
+                            <h3>Limonada Frozen</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 7</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="11" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="productn">
+                        <img src="images/trago4.png" title="Deléitate con el intenso sabor afrutado de nuestra limonada frozen de mora. ¡Una bebida vibrante que no puedes dejar pasar!" alt="">
+                        <div class="productn-txt">
+                            <h3>Jugo de Uva</h3>
+                            <p>Calidad premium</p>
+                            <p class="precio">S/. 7</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="12" >Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="horario" id="horario">
+        <div class="horario-info container">
+            <h2>
+                Horario
+            </h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Direccion</h4> <br>
+                    <p>
+                        Av San Martin 1792, Ica 11000
+                    </p>
+                    
+                </div>
+                <div class="txt">
+                    <h4>Horario</h4> <br>
+                    <p>
+                        Lunes-viernes : 6 pm a 3 am
+                    </p>
+                    <p>
+                        sabado-Domingo : 9 am a 3 am
+                    </p>
+
+                </div>
+                <div class="txt">
+                    <h4>Telefono</h4> <br>
+                    <p>
+                        952147896
+                    </p>
+                    <p>
+                        974523147
+                    </p>
+
+                </div>
+                <div class="txt">
+                    <h4>Redes Sociales</h4> <br>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/bubatonburger/?locale=es_LA">
+                            <div class="social">
+                                <img src="images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="https://x.com/burgercitiesbar?lang=es&mx=2">
+                            <div class="social">
+                                <img src="images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/bubatonburger/?hl=es">
+                            <div class="social">
+                                <img src="images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15479.804779102187!2d-75.7264506!3d-14.0800584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e3af5c6ce5e9%3A0x9ce6e0790bafceac!2sBubaton%20Burger!5e0!3m2!1ses-419!2spe!4v1722562515049!5m2!1ses-419!2spe"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="sobre " id="sobre">
+        <div class="sobre-img">
+            <img src="images/sobrenosotros.jpg" alt="">
+        </div>
+        <div class="sobre-txt">
+            <h2>
+                Sobre Nosotros
+            </h2>
+            <p>¡Comida rápida, calidad garantizada! En BUBATON BURGUER, te ofrecemos platos frescos y deliciosos,
+                preparados al momento para satisfacer tu hambre. Nuestra pasión es servirte lo mejor, rápido y con una
+                sonrisa. ¡Descubre por qué somos la opción favorita para comida rápida en Ica!</p>
+            <a href="#horario" class="btn-2"> Mas Informacion
+
+            </a>
+
+        </div>
+
+    </section>
+    <footer class="footer container">
+        <img class="logo-2" src="images/logo.svg" alt="">
+        <div class="links">
+            <h4>lorem</h4>
+            <ul>
+                <li><a href="#sobre" class="btn">SOBRE NOSOTROS </a></li>
+                <li><a href="comprar.html">PROMOCIONES </a></li>
+                <li><a href="#products" class="btn">MENU DESTACADO</a></li>
+                <li><a href="#horario" class="btn">DIRECCION</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>lorem</h4>
+            <ul>
+                <li><a href="">PREGUNTAS FRECUENTES</a></li>
+                <li><a href="#horario" class="btn">HORARIO Y ATENCION</a></li>
+                <li><a href="#">WHATSAPP</a></li>
+                <li><a href="#">INICIO</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>lorem</h4>
+            <div class="socials">
+                <a href="#">
+                    <div class="social">
+                        <img src="images/s1.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="images/s2.svg" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="social">
+                        <img src="images/s3.svg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--
+<main class="products" id="products">
+        <div class="tabs container">
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput1" value="1">
+            <label for="tab1">Hamburguesas</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Hamburguesa doble Carne</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+                    
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="1">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food2.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Perrito Caliente</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="2">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food3.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Pan de Pollo</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="3">Comprar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-next2"></div>
+                    <div class="swiper-button-prev2"></div>
+
+
+                </div>
+            </div>
+
+
+            <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+            <label for="tab2">Shawarma</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food4.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Burrito</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="4">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food5.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Shawarma Vegetariano</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="5">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food6.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Enrollado de Tortilla</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="6">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+
+                </div>
+            </div>
+
+
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">Variedades</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food7.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Ensalada de Verduras</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="7">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food8.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Anticuchos</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="8">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/food9.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Pizza</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/. 10</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="9">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+
+                </div>
+            </div>
+
+            <input type="radio" name="tabs" id="tab4" checked="checked" class="tabInput" value="4">
+            <label for="tab4">Bebidas</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper4">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img bebida">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/trago1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Jugo de Arandano</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/.7</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="10">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img bebida">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/trago2.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Jugo Afrodisiaco</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/.7</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="11">Comprar</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img bebida">
+                                    <h4> Nuevo </h4>
+                                    <img src="images/trago3.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4> Limonada Frozen</h4>
+                                    <p> calidad premium</p>
+                                    <span class="price">S/.7</span>
+
+                                </div>
+                                <a href="comprar.html" class="btn-3" data-id="12">Comprar</a>
+                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+-->
