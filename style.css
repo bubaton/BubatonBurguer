@@ -160,6 +160,7 @@ z-index: 1000;
 
 .submenu{
   position: absolute;
+  padding: 20px;
 }
 .submenu #carrito{
   display: none;
@@ -597,7 +598,7 @@ margin-bottom: 25px;
   cursor: pointer; /* Cambia el cursor al pasar */
   border-radius: 5px; /* Bordes redondeados */
   transition: background-color 0.3s, color 0.3s; /* Transición suave */
-  margin-top: 10px; /* Separación entre botones */
+  margin-top: 15px; /* Separación entre botones */
   width: 100%; /* Ajusta el tamaño al contenedor */
 
   text-align: center;
@@ -812,6 +813,40 @@ margin-bottom: 25px;
 .links h4{
   margin: 25px 0px 10px 0px;
 
+}
+
+.submenu:hover #carrito{
+  min-width: 100%;
+}
+
+.promos {
+  padding: 100px;
+}
+.promos h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+.categories {
+  grid-template-columns: repeat(1, 1fr);
+}
+.categorie {
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.categorie-1 {
+  width: 100%;
+  margin-bottom: 25px;
+  order: -1;
+}
+.categorie-img {
+  width: 100%;
+}
+.prices {
+  flex-direction: column;
+}
+.price-1 {
+  margin: 0;
 }
 
 }
