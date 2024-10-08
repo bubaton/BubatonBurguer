@@ -156,11 +156,11 @@ z-index: 1000;
   background-color: red;
 }
 
-
-
 .submenu{
   position: center;
-
+}
+.logo-3{
+  display: none;
 }
 .submenu #carrito{
   display: none;
@@ -650,9 +650,6 @@ margin-bottom: 25px;
     width: 0;
 
   }
-  .logo-3{
-    display: none;
-  }
   .menu label{
     display: initial;
   }

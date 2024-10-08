@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function enviarPedido() {
     const cartItems = document.querySelectorAll('#lista-carrito tbody tr');
-    let orderDetails = '🔥🔥 *Bubaton Burger* 🔥🔥\n\n';
+    let orderDetails = '🔥🔥 **Bubaton Burger** 🔥🔥\n\n';
 
     // Obtén el número de pedido desde localStorage
     let currentOrderNumber = parseInt(localStorage.getItem('orderNumber'), 10);
@@ -156,7 +156,7 @@ function enviarPedido() {
     let total = 0; // Variable para almacenar el total del pedido
 
     // Añadir el número de pedido al inicio después del título
-    orderDetails += **Número de Pedido**: ${currentOrderNumber}\n\n; 
+    orderDetails += `**Número de Pedido**: ${currentOrderNumber}\n\n`; 
 
     // Recorrer los productos seleccionados
     cartItems.forEach(item => {
@@ -165,29 +165,29 @@ function enviarPedido() {
         const price = parseFloat(priceText.replace('S/ ', '')); // Convierte el precio a número
 
         // Añadir el producto al detalle del pedido
-        orderDetails += `  - ${name} \n`;
+        orderDetails += `  - ${name}: S/ ${price.toFixed(2)}\n`;
 
         // Sumar el precio al total
         total += price;
     });
 
-   
+    // Añadir el total general del pedido
+    orderDetails += `\n💰 **Total del Pedido**: S/ ${total.toFixed(2)}\n\n`;
 
     // Añadir la dirección de entrega, método de pago y mensaje final
     const direccion = 'Av San Martin 1792, Ica 11000'; 
     const metodoPago = 'Efectivo'; // Reemplaza con el método de pago real
-    orderDetails += 📍 **Dirección del local**: ${direccion}\n;
-    orderDetails += 💳 **Método de Pago**: ${metodoPago}\n\n;
+    orderDetails += `📍 **Dirección del local**: ${direccion}\n`;
+    orderDetails += `💳 **Método de Pago**: ${metodoPago}\n\n`;
     orderDetails += '¡Gracias por tu compra!';
 
     const encodedMessage = encodeURIComponent(orderDetails);
     const phoneNumber = '960451026'; // Reemplaza con el número de teléfono
-    const whatsappUrl = https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage};
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
     window.open(whatsappUrl, '_blank');
 
     // Incrementar el número de pedido y actualizar localStorage
     localStorage.setItem('orderNumber', (currentOrderNumber + 1).toString());
 }
-
 
