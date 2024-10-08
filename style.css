@@ -159,8 +159,8 @@ z-index: 1000;
 
 
 .submenu{
-  position: absolute;
-  padding: 20px;
+  position: center;
+
 }
 .submenu #carrito{
   display: none;
@@ -650,6 +650,9 @@ margin-bottom: 25px;
     width: 0;
 
   }
+  .logo-3{
+    display: none;
+  }
   .menu label{
     display: initial;
   }
