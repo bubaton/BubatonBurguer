@@ -165,14 +165,13 @@ function enviarPedido() {
         const price = parseFloat(priceText.replace('S/ ', '')); // Convierte el precio a número
 
         // Añadir el producto al detalle del pedido
-        orderDetails += `  - ${name}: S/ ${price.toFixed(2)}\n`;
+        orderDetails += `  - ${name}:\n`;
 
         // Sumar el precio al total
         total += price;
     });
 
     // Añadir el total general del pedido
-    orderDetails += `\n💰 **Total del Pedido**: S/ ${total.toFixed(2)}\n\n`;
 
     // Añadir la dirección de entrega, método de pago y mensaje final
     const direccion = 'Av San Martin 1792, Ica 11000'; 

@@ -157,11 +157,9 @@ z-index: 1000;
 }
 
 .submenu{
-  position: center;
+  position: absolute;
 }
-.logo-3{
-  display: none;
-}
+
 .submenu #carrito{
   display: none;
 }
@@ -627,13 +625,21 @@ margin-bottom: 25px;
   background-color: #FF4500; /* Color de fondo al pasar el mouse */
   color: white; /* Color del texto al pasar el mouse */
 }
-
+.img-carrito{
+  margin-top: 25px;
+ }
 
 
 
 
 
 @media(max-width:991px){
+  .img-carrito{
+   
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
   .menu{
     padding: 20px;
     justify-content: space-between;
